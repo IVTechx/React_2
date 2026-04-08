@@ -11,8 +11,8 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./App.css";
-import FilterBar from "./components/FilterBar";
-import TaskInput from "./components/TaskInput";
+import FilterBar from "./components/FilterBar.tsx";
+import TaskInput from "./components/TaskInput.tsx";
 import hiImage from "../assets/hi.png";
 
 library.add(faTrash, faCheck, faCancel, faEdit, faAdd, faMoon, faSun);
