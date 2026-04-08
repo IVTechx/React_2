@@ -11,10 +11,9 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./App.css";
-import FilterBar from "./components/FilterBar.tsx";
-import TaskInput from "./components/TaskInput.tsx";
-import EmptyState from "./components/EmptyState.tsx";
-// import TodoItem from "./components/TodoItem";
+import FilterBar from "./components/FilterBar";
+import TaskInput from "./components/TaskInput";
+import hiImage from "../assets/hi.png";
 
 library.add(faTrash, faCheck, faCancel, faEdit, faAdd, faMoon, faSun);
 
@@ -117,7 +116,14 @@ const App = () => {
         <FilterBar filter={filter} setFilter={setFilter} count={counts} />
         <div className="todo-list">
           {filteredTodos.length === 0 ? (
-            <EmptyState filter={filter}/>
+            <div className="empty-state">
+              <div className="hi-image"><img src={hiImage} alt="Empty state" /></div>
+              {filter === "pending"
+                ? <p className="empty-text">No pending tasks! Great job!</p>
+                : filter === "completed"
+                ? <p className="empty-text">No completed tasks yet</p>
+                : <p className="empty-text">No tasks? Suspicious. Add one.</p>}
+            </div>
           ) : (
             filteredTodos.map((todo) => {
               return (
