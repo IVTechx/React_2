@@ -13,7 +13,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./App.css";
 import FilterBar from "./components/FilterBar.tsx";
 import TaskInput from "./components/TaskInput.tsx";
-import hiImage from "../assets/hi.png";
+import hiImage from "./assets/hi.png";
 
 library.add(faTrash, faCheck, faCancel, faEdit, faAdd, faMoon, faSun);
 
