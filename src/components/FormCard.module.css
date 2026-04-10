@@ -1,0 +1,6 @@
+/* FormCard.module.css */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--spacing) * 5.5);
+}

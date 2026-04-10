@@ -1,0 +1,108 @@
+/* Cards.module.css */
+.card {
+  background: var(--surface);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
+  min-height: 180px;
+  min-width: min(250px, 100%);
+  padding: calc(var(--spacing) * 6);
+  transition: all var(--default-transition-duration) var(--default-transition-timing-function);
+
+  /* Simplified transition to 'all' or grouped properties */
+}
+
+.card:hover {
+  box-shadow: var(--shadow-card-hover);
+  transform: translateY(-2px);
+}
+
+/* Title row: label left, colored icon badge right */
+.header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: calc(var(--spacing) * 4);
+}
+
+.title,
+.desc span {
+  color: var(--text-muted);
+  font-size: var(--text-xs);
+}
+
+.title {
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: var(--tracking-caps);
+  margin: 0;
+  text-transform: uppercase;
+}
+
+/* Colored icon badge container */
+.iconWrapper {
+  align-items: center;
+  border-radius: var(--radius-md);
+  color: var(--color-white);
+  display: flex;
+  flex-shrink: 0;
+  height: calc(var(--spacing) * 9);
+  justify-content: center;
+  width: calc(var(--spacing) * 9);
+}
+
+.iconWrapper.blue {
+  background: linear-gradient(135deg, var(--color-cyan-500), var(--color-blue-600));
+}
+.iconWrapper.orange {
+  background: linear-gradient(135deg, var(--color-orange-500), var(--color-red-500));
+}
+.iconWrapper.green {
+  background: linear-gradient(135deg, var(--color-green-500), var(--color-emerald-600));
+}
+
+/* Removed '!' syntax errors and consolidated sizing */
+.icon {
+  font-size: var(--text-base);
+  height: var(--text-base);
+  width: var(--text-base);
+}
+
+/* Body: name + description row */
+.body {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--spacing) * 1.5);
+}
+
+.name {
+  color: var(--text-main);
+  font-size: var(--text-15);
+  font-weight: var(--font-weight-bold);
+  margin: 0;
+  word-break: break-all;
+}
+
+.desc {
+  align-items: center;
+  display: flex;
+  gap: calc(var(--spacing) * 1.25);
+}
+
+/* Consolidated desc icon sizing */
+.descIcon {
+  flex-shrink: 0;
+  font-size: var(--text-13);
+  height: var(--text-13);
+  width: var(--text-13);
+}
+
+/* Desc icon colors - Cleaned up repetition */
+.descGreen {
+  color: var(--color-green-600);
+}
+.descBlue {
+  color: var(--color-blue-600);
+}
+
+.desc span {
+  font-weight: var(--font-weight-medium);
+}

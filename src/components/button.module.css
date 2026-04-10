@@ -1,0 +1,40 @@
+/* button.module.css */
+.formPart {
+  margin-top: calc(var(--spacing) * 2);
+}
+
+.button {
+  align-items: center;
+  background: var(--gradient-primary-disabled);
+  border: none;
+  border-radius: var(--radius-md);
+  color: var(--color-white);
+  cursor: not-allowed;
+  display: flex;
+  font-size: var(--text-15);
+  font-weight: var(--font-weight-semibold);
+  gap: calc(var(--spacing) * 2);
+  justify-content: center;
+  letter-spacing: 0.02em;
+  opacity: 0.5;
+  padding: calc(var(--spacing) * 3.5) calc(var(--spacing) * 6);
+  transition: all var(--default-transition-duration) var(--default-transition-timing-function);
+  width: 100%;
+}
+
+.button.active {
+  box-shadow: var(--shadow-primary-md);
+  cursor: pointer;
+  opacity: 1;
+}
+
+.button.active:hover {
+  background: var(--gradient-primary-hover);
+  box-shadow: var(--shadow-primary-lg);
+  transform: translateY(-1px);
+}
+
+.button.active:active {
+  box-shadow: var(--shadow-primary-sm);
+  transform: translateY(0);
+}

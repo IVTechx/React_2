@@ -1,0 +1,74 @@
+/* DashboardView.module.css */
+
+/* Wrapper handles minimum page height */
+.dashboardWrapper {
+  min-height: calc(100vh - var(--nav-height));
+}
+
+/* Content constrained to max-width and centered */
+.dashboardContent {
+  box-sizing: border-box;
+  margin: 0 auto;
+  max-width: var(--container-dashboard);
+  padding: calc(var(--spacing) * 10) calc(var(--spacing) * 6) calc(var(--spacing) * 16);
+}
+
+/* Header area spacing */
+.headerSection {
+  margin-bottom: 32px;
+}
+
+/* Stats: Responsive grid logic */
+.statsGrid {
+  display: grid;
+  gap: calc(var(--spacing) * 4);
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: calc(var(--spacing) * 6);
+}
+
+/* Activity section card */
+.activitySection {
+  background: var(--surface);
+  border-radius: calc(var(--spacing) * 4);
+  box-shadow: var(--shadow-surface);
+  padding: calc(var(--spacing) * 6);
+}
+
+/* Title row: layout for icon + text */
+.activityTitleRow {
+  align-items: center;
+  display: flex;
+  gap: calc(var(--spacing) * 3);
+  margin-bottom: calc(var(--spacing) * 1);
+}
+
+.activityTitle {
+  color: var(--text-main);
+  font-size: var(--text-lg);
+  font-weight: var(--font-weight-bold);
+  margin: 0;
+}
+
+.activitySubtitle {
+  color: var(--text-muted);
+  font-size: var(--text-sm);
+  margin: 0 0 calc(var(--spacing) * 5);
+}
+
+/* --- Media Queries (Consolidated) --- */
+
+@media (max-width: 900px) {
+  .statsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .dashboardContent {
+    padding: calc(var(--spacing) * 6) calc(var(--spacing) * 4) calc(var(--spacing) * 10);
+  }
+
+  .statsGrid {
+    grid-template-columns: 1fr;
+  }
+}
