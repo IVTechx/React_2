@@ -10,7 +10,7 @@ type InputProps = {
 
 const Input = ({ onChange, value, name }: InputProps) => {
   const title = firstUpperChar(name);
-  
+
   // Capitalize 'Icon' so React treats it as a component
   const Icon = name === "email" ? Icons.Email : Icons.Profile;
 

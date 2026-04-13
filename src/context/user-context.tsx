@@ -1,10 +1,9 @@
-import { createContext, useState, useEffect, type ReactNode, useContext } from "react";
+import { createContext, useState, type ReactNode, useContext } from "react";
 
 export interface Person {
   id: number;
   name: string;
   email: string;
-  isSigned: boolean;
 }
 
 interface UserContextType {
@@ -17,34 +16,23 @@ interface UserContextType {
 export const UserContext = createContext<UserContextType | undefined>(undefined);
 
 export const UserProvider = ({ children }: { children: ReactNode }) => {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
-  const [currentUser, setCurrentUser] = useState<Person | null>(null);
+  const [currentUser, setCurrentUser] = useState<Person | null>(() => {
+    const session = sessionStorage.getItem("active_session");
+    return session ? JSON.parse(session) : null;
+  });
 
-  useEffect(() => {
-    const savedUser = localStorage.getItem("user");
-    if (savedUser) {
-      const parsedUser = JSON.parse(savedUser);
-      setCurrentUser(parsedUser);
-      setIsLoggedIn(true);
-    }
-  }, []);
-
-  useEffect(() => {
-    if (currentUser) {
-      localStorage.setItem("user", JSON.stringify(currentUser));
-    } else {
-      localStorage.removeItem("user");
-    }
-  }, [currentUser]);
+  const [isLoggedIn, setIsLoggedIn] = useState(currentUser !== null);
 
   const handleLogin = (userData: Person) => {
     setCurrentUser(userData);
     setIsLoggedIn(true);
+    sessionStorage.setItem("active_session", JSON.stringify(userData));
   };
 
   const handleLogout = () => {
     setCurrentUser(null);
     setIsLoggedIn(false);
+    sessionStorage.removeItem("active_session");
   };
 
   return (

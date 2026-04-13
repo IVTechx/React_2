@@ -14,12 +14,10 @@ const DashboardView = () => {
   return (
     <div className={styles.dashboardWrapper}>
       <div className={styles.dashboardContent}>
-        {/* Header: "Welcome back, name!" + date + teal underline */}
         <div className={styles.headerSection}>
           <Header title={`Welcome back, ${currentUser.name}!`} content={todayDate(isLoggedIn)} />
         </div>
 
-        {/* Stats Cards */}
         <div className={styles.statsGrid}>
           <Cards
             title="Profile"
@@ -50,7 +48,6 @@ const DashboardView = () => {
           />
         </div>
 
-        {/* Activity section */}
         <div className={styles.activitySection}>
           <div className={styles.activityTitleRow}>
             <Icons.ActivityHeader />

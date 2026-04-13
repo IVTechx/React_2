@@ -1,10 +1,8 @@
-/* Header.module.css */
 .container {
   margin-bottom: 0;
   text-align: center;
 }
 
-/* "Welcome Back" / "Welcome back, name!" */
 .title {
   color: var(--text-main);
   font-size: var(--text-4xl);
@@ -12,28 +10,19 @@
   letter-spacing: var(--tracking-tight);
   line-height: 1.2;
   margin: 0 0 calc(var(--spacing) * 2);
-
-  /* Layout & Typography */
 }
 
-/* Subtitle: "Sign in to access..." or date string */
 .content {
   color: var(--text-muted);
   font-size: var(--text-base);
   line-height: 1.5;
   margin: 0 0 calc(var(--spacing) * 3.5);
-
-  /* Layout & Typography */
 }
 
-/* Teal underline bar — visible on dashboard header */
 .underline {
   background: var(--gradient-underline);
   border-radius: 2px;
   height: 3px;
   margin: 0 auto;
   width: 70px;
-
-  /* Dimensions & Centering */
-  /* Visuals */
 }

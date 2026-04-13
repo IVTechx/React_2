@@ -1,19 +1,15 @@
-/* input.module.css */
 .formPart {
   display: flex;
   flex-direction: column;
   gap: 0;
 }
 
-/* Label row: icon + text side by side */
 .labelWrapper {
   align-items: center;
   color: var(--color-slate-700);
   display: flex;
   gap: calc(var(--spacing) * 1.5);
   margin-bottom: calc(var(--spacing) * 2);
-
-  /* Grouped shared color to inherit down to icon and label if needed */
 }
 
 .labelIcon {
@@ -28,7 +24,6 @@
   line-height: 1;
 }
 
-/* Input field */
 .input {
   background: var(--surface);
   border: 1.5px solid var(--surface-border);
@@ -40,8 +35,6 @@
   padding: calc(var(--spacing) * 3) calc(var(--spacing) * 4);
   transition: var(--default-transition-duration) var(--default-transition-timing-function);
   width: 100%;
-
-  /* Simplified transition shorthand */
 }
 
 .input::placeholder {

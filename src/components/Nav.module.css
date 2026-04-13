@@ -1,4 +1,4 @@
-/* Nav.module.css */
+
 .header {
   background: var(--surface);
   border-bottom: 1px solid var(--surface-border);
@@ -38,7 +38,8 @@
   gap: calc(var(--spacing) * 4);
 }
 
-.message {
+.message,
+.writeLink {
   color: var(--text-muted);
   font-size: var(--text-sm);
   font-weight: var(--font-weight-medium);
@@ -47,7 +48,8 @@
   text-align: right;
 }
 
-.message strong {
+.message strong,
+.writeLink:hover {
   color: var(--text-main);
   display: block;
   font-size: var(--text-13);
@@ -67,11 +69,58 @@
   gap: calc(var(--spacing) * 1.75);
   padding: calc(var(--spacing) * 1.5) calc(var(--spacing) * 3.25);
   transition: var(--default-transition-duration) var(--default-transition-timing-function);
-
-  /* Simplified transition shorthand */
 }
 
 .signoutBtn:hover {
   background: var(--color-slate-50);
   border-color: var(--surface-border-hover);
+}
+
+@media (max-width: 768px) {
+  .navInner {
+    padding: 0 var(--spacing);
+  }
+
+  .logo h2 {
+    font-size: var(--text-xl);
+  }
+
+  .message {
+    display: none;
+  }
+
+  .right {
+    gap: calc(var(--spacing) * 2);
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    height: auto;
+    padding: var(--spacing) 0;
+  }
+
+  .navInner {
+    flex-direction: column;
+    gap: var(--spacing);
+  }
+
+  .logo {
+    gap: var(--spacing);
+  }
+
+  .right {
+    gap: var(--spacing);
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .signoutBtn {
+    font-size: var(--text-xs);
+    padding: calc(var(--spacing) * 1) calc(var(--spacing) * 2);
+  }
+
+  .writeLink {
+    font-size: var(--text-xs);
+  }
 }

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { useUserContext } from "../context/user-context";
 import styles from "./Nav.module.css";
 import { Icons } from "./Icons";
@@ -8,16 +9,17 @@ const Nav = () => {
   return (
     <header className={styles.header}>
       <div className={styles.navInner}>
-        {/* Left: Logo */}
         <div className={styles.logo}>
           <Icons.Logo />
           <h2>Personal Dashboard</h2>
         </div>
-
-        {/* Right: user info or prompt */}
         <div className={styles.right}>
           {currentUser ? (
             <>
+              <Link to={`/user/${currentUser.id}/write`} className={styles.writeLink}>
+                <Icons.Edit />
+                Write Article
+              </Link>
               <p className={styles.message}>
                 Welcome back,
                 <strong>{currentUser.name}</strong>

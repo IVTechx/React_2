@@ -1,11 +1,7 @@
-/* DashboardView.module.css */
-
-/* Wrapper handles minimum page height */
 .dashboardWrapper {
   min-height: calc(100vh - var(--nav-height));
 }
 
-/* Content constrained to max-width and centered */
 .dashboardContent {
   box-sizing: border-box;
   margin: 0 auto;
@@ -13,12 +9,10 @@
   padding: calc(var(--spacing) * 10) calc(var(--spacing) * 6) calc(var(--spacing) * 16);
 }
 
-/* Header area spacing */
 .headerSection {
   margin-bottom: 32px;
 }
 
-/* Stats: Responsive grid logic */
 .statsGrid {
   display: grid;
   gap: calc(var(--spacing) * 4);
@@ -26,7 +20,6 @@
   margin-bottom: calc(var(--spacing) * 6);
 }
 
-/* Activity section card */
 .activitySection {
   background: var(--surface);
   border-radius: calc(var(--spacing) * 4);
@@ -34,7 +27,6 @@
   padding: calc(var(--spacing) * 6);
 }
 
-/* Title row: layout for icon + text */
 .activityTitleRow {
   align-items: center;
   display: flex;
@@ -54,8 +46,6 @@
   font-size: var(--text-sm);
   margin: 0 0 calc(var(--spacing) * 5);
 }
-
-/* --- Media Queries (Consolidated) --- */
 
 @media (max-width: 900px) {
   .statsGrid {

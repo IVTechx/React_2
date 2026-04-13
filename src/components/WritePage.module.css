@@ -1,0 +1,316 @@
+.pageWrapper {
+  min-height: 100vh;
+  padding: 3rem 1rem;
+}
+
+.pageContent {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.topRow {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  min-height: 3rem;
+  position: relative;
+  width: 100%;
+}
+
+.backBtn {
+  background: var(--color-white);
+  border: 1px solid var(--surface-border);
+  border-radius: var(--radius-md);
+  color: var(--text-main);
+  cursor: pointer;
+  font-size: var(--text-sm);
+  font-weight: var(--font-weight-medium);
+  left: 0;
+  padding: 0.6rem 1.2rem;
+  position: absolute;
+  top: -40%;
+  transform: translateY(-50%);
+  transition: all var(--default-transition-duration);
+  white-space: nowrap;
+}
+
+.backBtn:hover {
+  background: var(--color-slate-50);
+  border-color: var(--surface-border-hover);
+}
+
+.editorCard {
+  background: var(--color-white);
+  border: 1px solid var(--surface-border);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.fieldGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.fieldLabel {
+  color: var(--text-muted);
+  font-size: var(--text-xs);
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: var(--tracking-caps);
+  text-transform: uppercase;
+}
+
+.titleInput {
+  background: var(--color-slate-50);
+  border: 1px solid var(--surface-border);
+  border-radius: var(--radius-md);
+  color: var(--text-main);
+  font-family: var(--font-sans);
+  font-size: var(--text-17);
+  outline: none;
+  padding: 0.8rem 1rem;
+  transition: all var(--default-transition-duration) var(--ease-in-out);
+  width: 100%;
+}
+
+.titleInput:focus {
+  background: var(--color-white);
+  border-color: var(--color-blue-500);
+  box-shadow: var(--focus-ring);
+}
+
+.bodyTextarea {
+  background: var(--color-slate-50);
+  border: 1px solid var(--surface-border);
+  border-radius: var(--radius-md);
+  color: var(--text-main);
+  font-family: var(--font-sans);
+  font-size: var(--text-base);
+  line-height: var(--leading-relaxed);
+  min-height: 200px;
+  outline: none;
+  padding: 1rem;
+  resize: vertical;
+  transition: all var(--default-transition-duration) var(--ease-in-out);
+  width: 100%;
+}
+
+.bodyTextarea:focus {
+  background: var(--color-white);
+  border-color: var(--color-blue-500);
+  box-shadow: var(--focus-ring);
+}
+
+.editorFooter {
+  align-items: center;
+  border-top: 1px solid var(--surface-border);
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1.25rem;
+}
+
+.charCount {
+  color: var(--text-faint);
+  font-size: var(--text-xs);
+}
+
+.actions {
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+}
+
+.cancelBtn {
+  background: transparent;
+  border: none;
+  border-radius: var(--radius-md);
+  color: var(--text-muted);
+  cursor: pointer;
+  font-size: var(--text-sm);
+  padding: 0.6rem 1.2rem;
+}
+
+.cancelBtn:hover:not(:disabled) {
+  background: var(--color-slate-100);
+  color: var(--text-main);
+}
+
+.saveBtn {
+  background: var(--gradient-primary);
+  border: none;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-primary-sm);
+  color: var(--color-white);
+  cursor: pointer;
+  font-size: var(--text-sm);
+  font-weight: var(--font-weight-semibold);
+  padding: 0.6rem 1.5rem;
+  transition: all var(--default-transition-duration) var(--ease-in-out);
+}
+
+.saveBtn:hover:not(.saveBtnDisabled) {
+  box-shadow: var(--shadow-primary-md);
+  filter: brightness(1.05);
+  transform: translateY(-1px);
+}
+
+.saveBtn:active:not(.saveBtnDisabled) {
+  transform: translateY(0);
+}
+
+.saveBtnDisabled {
+  background: var(--color-slate-200);
+  box-shadow: none;
+  color: var(--text-faint);
+  cursor: not-allowed;
+}
+
+.articlesSection {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.articlesSectionHeader {
+  align-items: center;
+  border-bottom: 1px solid var(--surface-border);
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+}
+
+.articlesHeading {
+  color: var(--text-main);
+  font-size: var(--text-xl);
+  font-weight: var(--font-weight-bold);
+}
+
+.filterTabs {
+  background: var(--color-slate-100);
+  border-radius: var(--radius-md);
+  display: flex;
+  gap: 0.25rem;
+  padding: 0.25rem;
+}
+
+.filterTab {
+  align-items: center;
+  background: transparent;
+  border: none;
+  border-radius: calc(var(--radius-md) - 2px);
+  color: var(--text-muted);
+  cursor: pointer;
+  display: flex;
+  font-size: var(--text-xs);
+  font-weight: var(--font-weight-medium);
+  gap: 0.5rem;
+  padding: 0.4rem 0.8rem;
+  transition: all 0.2s;
+}
+
+.filterTabActive {
+  background: var(--color-white);
+  box-shadow: var(--shadow-surface);
+  color: var(--color-blue-600);
+}
+
+.filterCount {
+  background: var(--color-slate-200);
+  border-radius: 10px;
+  color: var(--text-main);
+  font-size: 10px;
+  padding: 1px 6px;
+}
+
+.emptyState {
+  color: var(--text-faint);
+  font-style: italic;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.articlesList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.articleItem {
+  background: var(--color-white);
+  border: 1px solid var(--surface-border);
+  border-radius: var(--radius-card);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 1.5rem;
+  transition: transform 0.2s;
+}
+
+.articleItem:hover {
+  box-shadow: var(--shadow-card-hover);
+}
+
+.articleMeta {
+  align-items: flex-start;
+  display: flex;
+  justify-content: space-between;
+}
+
+.articleMetaLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.articleTitle {
+  color: var(--text-main);
+  font-size: var(--text-lg);
+  font-weight: var(--font-weight-bold);
+  overflow-wrap: break-word;
+  word-break: break-all;
+}
+
+.articleAuthor {
+  color: var(--color-blue-600);
+  font-size: var(--text-xs);
+  font-weight: var(--font-weight-medium);
+}
+
+.articleDate {
+  color: var(--text-faint);
+  font-size: var(--text-xs);
+}
+
+.articlePreview {
+  color: var(--color-slate-600);
+  font-size: var(--text-15);
+  line-height: var(--leading-relaxed);
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+.deleteBtn {
+  align-self: flex-start;
+  background: var(--color-red-50);
+  border: 1px solid transparent;
+  border-radius: var(--radius-sm);
+  color: var(--color-red-600);
+  cursor: pointer;
+  font-size: var(--text-xs);
+  font-weight: var(--font-weight-medium);
+  margin-top: 0.5rem;
+  padding: 0.4rem 0.8rem;
+  transition: all 0.2s;
+}
+
+.deleteBtn:hover {
+  background: var(--color-red-600);
+  color: var(--color-white);
+}
