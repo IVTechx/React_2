@@ -5,7 +5,7 @@ interface ProtectedRouteProps {
   children: React.JSX.Element;
 }
 
-const ProtectedRoute = ({ children }: { children: ProtectedRouteProps }) => {
+const ProtectedRoute = ({ children }: ProtectedRouteProps) => {
   const { isLoggedIn } = useUserContext();
 
   if (!isLoggedIn) {
