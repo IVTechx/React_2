@@ -1,0 +1,21 @@
+.stat {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.value {
+  color: var(--accent);
+  font-size: var(--text-4xl);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: var(--tracking-tight);
+  margin-bottom: calc(var(--spacing) * 2);
+}
+
+.label {
+  color: var(--muted-foreground);
+  font-size: var(--text-sm);
+  font-weight: var(--font-weight-medium);
+  text-transform: none;
+}

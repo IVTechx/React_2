@@ -1,0 +1,222 @@
+[
+  {
+    "id": "quiz-1713956400000",
+    "title": "React Basics Quiz",
+    "topic": "React",
+    "description": "Covers core React concepts including hooks, JSX, and component structure.",
+    "difficulty": "Easy",
+    "language": "English",
+    "createdAt": "2026-04-24T10:00:00.000Z",
+    "questions": [
+      {
+        "question": "Which hook is used to manage state?",
+        "options": ["useEffect", "useState", "useRef", "useMemo"],
+        "correctAnswer": 1,
+        "explanation": "useState is used for managing component state."
+      },
+      {
+        "question": "What is JSX?",
+        "options": [
+          "A database query language",
+          "A JavaScript extension for UI",
+          "A CSS library",
+          "A backend framework"
+        ],
+        "correctAnswer": 1,
+        "explanation": "JSX allows writing HTML-like code in JavaScript."
+      },
+      {
+        "question": "What is a React component?",
+        "options": ["Reusable UI block", "Database schema", "CSS module", "API endpoint"],
+        "correctAnswer": 0,
+        "explanation": "Components are reusable pieces of UI."
+      },
+      {
+        "question": "Which hook handles side effects?",
+        "options": ["useState", "useEffect", "useContext", "useReducer"],
+        "correctAnswer": 1,
+        "explanation": "useEffect is used for side effects like API calls."
+      },
+      {
+        "question": "Props are used to?",
+        "options": ["Store state", "Pass data to components", "Style components", "Handle routing"],
+        "correctAnswer": 1,
+        "explanation": "Props pass data between components."
+      }
+    ]
+  },
+  {
+    "id": "quiz-1713956500000",
+    "title": "JavaScript Fundamentals",
+    "topic": "JavaScript",
+    "description": "Test your knowledge of JavaScript basics.",
+    "difficulty": "Medium",
+    "language": "English",
+    "createdAt": "2026-04-24T10:05:00.000Z",
+    "questions": [
+      {
+        "question": "Which keyword declares a variable?",
+        "options": ["var", "let", "const", "All"],
+        "correctAnswer": 3,
+        "explanation": "All can declare variables."
+      },
+      {
+        "question": "What is typeof null?",
+        "options": ["null", "object", "undefined", "number"],
+        "correctAnswer": 1,
+        "explanation": "This is a known JavaScript quirk."
+      },
+      {
+        "question": "What does '===' do?",
+        "options": ["Assign", "Compare value", "Compare value & type", "Check existence"],
+        "correctAnswer": 2,
+        "explanation": "Strict equality checks value and type."
+      },
+      {
+        "question": "Which is a primitive type?",
+        "options": ["Object", "Array", "String", "Function"],
+        "correctAnswer": 2,
+        "explanation": "String is a primitive."
+      },
+      {
+        "question": "Which method converts JSON to object?",
+        "options": ["JSON.stringify", "JSON.parse", "JSON.convert", "JSON.toObject"],
+        "correctAnswer": 1,
+        "explanation": "JSON.parse converts JSON string to object."
+      }
+    ]
+  },
+  {
+    "id": "quiz-1713956600000",
+    "title": "HTML & CSS Basics",
+    "topic": "Web Development",
+    "description": "Fundamentals of HTML structure and CSS styling.",
+    "difficulty": "Easy",
+    "language": "English",
+    "createdAt": "2026-04-24T10:10:00.000Z",
+    "questions": [
+      {
+        "question": "What tag creates a link?",
+        "options": ["<a>", "<link>", "<href>", "<nav>"],
+        "correctAnswer": 0,
+        "explanation": "<a> defines a hyperlink."
+      },
+      {
+        "question": "CSS stands for?",
+        "options": [
+          "Creative Style System",
+          "Cascading Style Sheets",
+          "Computer Style Syntax",
+          "Colorful Style Sheets"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Correct expansion."
+      },
+      {
+        "question": "Which property sets text color?",
+        "options": ["font-color", "color", "text-style", "bgcolor"],
+        "correctAnswer": 1,
+        "explanation": "Use 'color'."
+      },
+      {
+        "question": "HTML is used for?",
+        "options": ["Styling", "Structure", "Logic", "Database"],
+        "correctAnswer": 1,
+        "explanation": "HTML defines structure."
+      },
+      {
+        "question": "Which is a CSS selector?",
+        "options": [".class", "#id", "element", "All"],
+        "correctAnswer": 3,
+        "explanation": "All are valid selectors."
+      }
+    ]
+  },
+  {
+    "id": "quiz-1713956700000",
+    "title": "General Knowledge Quiz",
+    "topic": "General",
+    "description": "A mix of general knowledge questions.",
+    "difficulty": "Medium",
+    "language": "English",
+    "createdAt": "2026-04-24T10:15:00.000Z",
+    "questions": [
+      {
+        "question": "Capital of France?",
+        "options": ["Berlin", "Madrid", "Paris", "Rome"],
+        "correctAnswer": 2,
+        "explanation": "Paris is the capital."
+      },
+      {
+        "question": "Red Planet?",
+        "options": ["Earth", "Mars", "Venus", "Jupiter"],
+        "correctAnswer": 1,
+        "explanation": "Mars is called Red Planet."
+      },
+      {
+        "question": "Largest ocean?",
+        "options": ["Atlantic", "Indian", "Pacific", "Arctic"],
+        "correctAnswer": 2,
+        "explanation": "Pacific is the largest."
+      },
+      {
+        "question": "Fastest land animal?",
+        "options": ["Lion", "Tiger", "Cheetah", "Leopard"],
+        "correctAnswer": 2,
+        "explanation": "Cheetah is fastest."
+      },
+      {
+        "question": "H2O is?",
+        "options": ["Oxygen", "Hydrogen", "Water", "Salt"],
+        "correctAnswer": 2,
+        "explanation": "H2O is water."
+      }
+    ]
+  },
+  {
+    "id": "quiz-1713956800000",
+    "title": "Computer Science Basics",
+    "topic": "Computer Science",
+    "description": "Introductory CS concepts.",
+    "difficulty": "Medium",
+    "language": "English",
+    "createdAt": "2026-04-24T10:20:00.000Z",
+    "questions": [
+      {
+        "question": "What does CPU stand for?",
+        "options": [
+          "Central Process Unit",
+          "Central Processing Unit",
+          "Computer Personal Unit",
+          "Control Processing Unit"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Correct term is Central Processing Unit."
+      },
+      {
+        "question": "Binary uses?",
+        "options": ["0-9", "0 & 1", "1-10", "A & B"],
+        "correctAnswer": 1,
+        "explanation": "Binary uses 0 and 1."
+      },
+      {
+        "question": "RAM is?",
+        "options": ["Permanent storage", "Temporary memory", "CPU type", "Disk"],
+        "correctAnswer": 1,
+        "explanation": "RAM is volatile memory."
+      },
+      {
+        "question": "HTML is?",
+        "options": ["Programming language", "Markup language", "Database", "OS"],
+        "correctAnswer": 1,
+        "explanation": "HTML is markup language."
+      },
+      {
+        "question": "Which is an OS?",
+        "options": ["Windows", "Chrome", "Google", "Intel"],
+        "correctAnswer": 0,
+        "explanation": "Windows is an operating system."
+      }
+    ]
+  }
+]

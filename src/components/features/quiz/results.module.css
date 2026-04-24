@@ -1,0 +1,136 @@
+.container {
+  align-items: center;
+  background-color: var(--background);
+  display: flex;
+  font-family: var(--font-sans);
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 24px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  max-width: 500px;
+  padding: 48px 32px;
+  text-align: center;
+  width: 100%;
+}
+
+.iconWrapper {
+  align-items: center;
+  background-color: #f0fdf4;
+  border-radius: 50%;
+  display: flex;
+  height: 80px;
+  justify-content: center;
+  margin: 0 auto 24px;
+  width: 80px;
+}
+
+.checkIcon {
+  color: #22c55e;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.title {
+  color: #111827;
+  font-size: 28px;
+  font-weight: 800;
+  margin: 0 0 8px 0;
+}
+
+.subtitle {
+  color: #6b7280;
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+
+/* Score Section */
+.scoreCircle {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+.percentage {
+  color: #111827;
+  font-size: 64px;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.scoreText {
+  color: #6b7280;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 8px;
+}
+
+/* Stats Row */
+.statsGrid {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 40px;
+}
+
+.statBox {
+  background: #f9fafb;
+  border: 1px solid #f3f4f6;
+  border-radius: 12px;
+  padding: 16px 8px;
+}
+
+.statValue {
+  color: #111827;
+  display: block;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.statLabel {
+  color: #9ca3af;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+/* Buttons */
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.reviewBtn {
+  background: #000;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 14px;
+  transition: opacity 0.2s;
+}
+
+.homeBtn {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  color: #374151;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 14px;
+}
+
+.reviewBtn:hover,
+.homeBtn:hover {
+  opacity: 0.8;
+}
