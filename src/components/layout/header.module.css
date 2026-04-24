@@ -1,0 +1,140 @@
+.container {
+  background: var(--primary);
+  border-bottom: 1px solid var(--border);
+  border-bottom-color: color-mix(in oklch, var(--border) 35%, transparent);
+  color: var(--primary-foreground);
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.navbar {
+  align-items: center;
+  display: flex;
+  height: 64px;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: var(--container-7xl);
+  padding: 0 16px;
+}
+
+.leftNavbar {
+  align-items: center;
+  display: flex;
+  height: 100%;
+}
+
+.logo {
+  color: var(--primary-foreground);
+  height: 32px;
+  margin-right: 16px;
+  width: 32px;
+}
+
+.name {
+  align-items: center;
+  color: var(--primary-foreground);
+  display: flex;
+  font-family: var(--default-font-family);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.rightNavbar {
+  align-items: center;
+  display: flex;
+}
+
+.loggedInGroup {
+  align-items: center;
+  display: flex;
+  gap: 24px;
+}
+
+.welcome {
+  font-size: 16px;
+}
+
+.navLink {
+  align-items: center;
+  color: var(--primary-foreground);
+  display: flex;
+  font-size: 15px;
+  font-weight: 500;
+  gap: 8px;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.navIcon {
+  color: inherit;
+  height: 18px;
+  width: 18px;
+}
+
+.navLink:hover {
+  opacity: 0.7;
+}
+
+.login {
+  background: transparent;
+  border: 1px solid color-mix(in oklch, var(--primary-foreground) 75%, transparent);
+  border-radius: var(--radius-md);
+  color: var(--primary-foreground);
+  cursor: pointer;
+  font-weight: 600;
+  padding: 8px 16px;
+
+transition:
+    background-color var(--default-transition-duration) var(--ease-in-out),
+    color var(--default-transition-duration) var(--ease-in-out),
+    border-color var(--default-transition-duration) var(--ease-in-out);
+}
+
+.login:hover {
+  background: var(--primary-foreground);
+  color: var(--primary);
+}
+
+.logoutBtn {
+  background: transparent;
+  border: 1px solid color-mix(in oklch, var(--primary-foreground) 75%, transparent);
+  border-radius: var(--radius-md);
+  color: var(--primary-foreground);
+  cursor: pointer;
+  font-weight: 500;
+  padding: 8px 16px;
+
+transition:
+    background-color var(--default-transition-duration) var(--ease-in-out),
+    color var(--default-transition-duration) var(--ease-in-out),
+    border-color var(--default-transition-duration) var(--ease-in-out);
+}
+
+.logoutBtn:hover {
+  background: var(--primary-foreground);
+  color: var(--primary);
+}
+
+@media (max-width: 768px) {
+  .welcome {
+    display: none;
+  }
+  .navbar {
+    padding: 0 16px;
+  }
+}
+
+@media (min-width: 640px) {
+  .navbar {
+    padding: 0 24px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .navbar {
+    padding: 0 32px;
+  }
+}
