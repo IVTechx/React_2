@@ -1,0 +1,19 @@
+/* StatusBar.module.css */
+
+.statusBar {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.stat {
+  font-size: 14px;
+  color: #6b7280;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.value {
+  color: #111827;
+  font-weight: 500;
+}

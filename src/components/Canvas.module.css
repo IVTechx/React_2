@@ -1,0 +1,31 @@
+/* Canvas.module.css */
+
+.canvas {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  background: #f9fafb;
+  border: 1.5px dashed #d1d5db;
+  border-radius: 8px;
+  cursor: crosshair;
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+
+.svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.hint {
+  position: absolute;
+  top: 12px;
+  left: 16px;
+  font-size: 14px;
+  color: #9ca3af;
+  pointer-events: none;
+  user-select: none;
+}

@@ -1,0 +1,37 @@
+/* Toolbar.module.css */
+
+.toolbar {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.btn {
+  padding: 6px 16px;
+  font-size: 14px;
+  font-family: inherit;
+  background: #ffffff;
+  color: #374151;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.15s;
+  line-height: 1.5;
+}
+
+.btn:hover:not(:disabled) {
+  background: #f9fafb;
+  border-color: #9ca3af;
+}
+
+.btn:active:not(:disabled) {
+  background: #f3f4f6;
+  transform: scale(0.98);
+}
+
+.btn:disabled {
+  color: #9ca3af;
+  cursor: not-allowed;
+  background: #ffffff;
+  border-color: #e5e7eb;
+}
