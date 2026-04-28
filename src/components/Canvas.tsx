@@ -2,7 +2,7 @@ import styles from "./drawingApp.module.css";
 import type { Point } from "./Utils/types";
 
 type Props = {
-  canvasRef: React.RefObject<HTMLDivElement>;
+  canvasRef: React.RefObject<HTMLDivElement | null>;
   points: Point[];
   onClick: (e: React.MouseEvent<HTMLDivElement>) => void;
 };
